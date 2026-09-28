@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:pageflipper/Resources/Private/Language/locallang.xlf" product-name="pageflipper">
+		<header/>
+		<body>
+			<trans-unit id="card.open" resname="card.open">
+				<source>Open</source>
+			</trans-unit>
+			<trans-unit id="viewer.loading" resname="viewer.loading">
+				<source>Loading flipbook …</source>
+			</trans-unit>
+			<trans-unit id="viewer.error" resname="viewer.error">
+				<source>The document could not be loaded.</source>
+			</trans-unit>
+			<trans-unit id="viewer.pageOf" resname="viewer.pageOf">
+				<source>Page %1$s of %2$s</source>
+			</trans-unit>
+			<trans-unit id="viewer.previous" resname="viewer.previous">
+				<source>Previous page</source>
+			</trans-unit>
+			<trans-unit id="viewer.next" resname="viewer.next">
+				<source>Next page</source>
+			</trans-unit>
+			<trans-unit id="viewer.zoomIn" resname="viewer.zoomIn">
+				<source>Zoom in</source>
+			</trans-unit>
+			<trans-unit id="viewer.zoomOut" resname="viewer.zoomOut">
+				<source>Zoom out</source>
+			</trans-unit>
+			<trans-unit id="viewer.fullscreen" resname="viewer.fullscreen">
+				<source>Fullscreen</source>
+			</trans-unit>
+			<trans-unit id="viewer.download" resname="viewer.download">
+				<source>Download PDF</source>
+			</trans-unit>
+			<trans-unit id="viewer.close" resname="viewer.close">
+				<source>Close</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,30 @@
+tt_content.pageflipper =< lib.contentElement
+tt_content.pageflipper {
+    templateName = PageFlipper
+    templateRootPaths {
+        1720 = EXT:pageflipper/Resources/Private/Templates/
+        1721 = {$plugin.tx_pageflipper.view.templateRootPath}
+    }
+    partialRootPaths {
+        1720 = EXT:pageflipper/Resources/Private/Partials/
+        1721 = {$plugin.tx_pageflipper.view.partialRootPath}
+    }
+    layoutRootPaths {
+        1721 = {$plugin.tx_pageflipper.view.layoutRootPath}
+    }
+
+    settings {
+        includeCss = {$plugin.tx_pageflipper.settings.includeCss}
+        cssFile = {$plugin.tx_pageflipper.settings.cssFile}
+    }
+
+    dataProcessing {
+        1720 = pageflipper
+        1720 {
+            references.fieldName = tx_pageflipper_files
+            cover.width = {$plugin.tx_pageflipper.settings.coverWidth}
+            pdfThumbnails = {$plugin.tx_pageflipper.settings.pdfThumbnails}
+            as = pageflipper
+        }
+    }
+}

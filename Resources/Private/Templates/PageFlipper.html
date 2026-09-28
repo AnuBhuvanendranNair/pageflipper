@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{pageflipper.items}">
+        <f:if condition="{settings.includeCss}">
+            <f:asset.css identifier="pageflipper" href="{settings.cssFile}" />
+        </f:if>
+        <f:asset.script identifier="pageflipper" src="EXT:pageflipper/Resources/Public/JavaScript/PageFlipperLoader.js" type="module" />
+
+        <div class="pageflipper pageflipper--{pageflipper.settings.layout}" id="pageflipper-{data.uid}" data-pageflipper data-pageflipper-version="{pageflipper.settings.assetVersion}" data-pageflipper-page-mode="{pageflipper.settings.pageMode}">
+            <ul class="pageflipper-grid pageflipper-grid--cols-{pageflipper.settings.columns}">
+                <f:for each="{pageflipper.items}" as="item">
+                    <li class="pageflipper-grid__item">
+                        <f:render partial="PageFlipper/Item/{pageflipper.settings.itemPartial}" arguments="{item: item, settings: pageflipper.settings, data: data}" />
+                    </li>
+                </f:for>
+            </ul>
+            <f:render partial="PageFlipper/Viewer" arguments="{settings: pageflipper.settings, data: data}" />
+        </div>
+    </f:if>
+</f:section>
+</html>

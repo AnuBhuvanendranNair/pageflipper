@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<a class="pageflipper-card"
+   href="{item.url}"
+   data-pageflipper-open
+   data-pageflipper-src="{item.url}"
+   data-pageflipper-title="{item.title}"
+   data-pageflipper-download="{f:if(condition: settings.download, then: item.url)}"
+>
+    <span class="pageflipper-card__cover"><f:render partial="PageFlipper/Cover" arguments="{item: item}" /></span>
+    <span class="{f:if(condition: settings.showTitles, then: 'pageflipper-card__title', else: 'pageflipper-visually-hidden')}"><span class="pageflipper-card__title-text">{item.title}</span></span>
+</a>
+</html>

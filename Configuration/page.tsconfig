@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        pageflipper {
+            iconIdentifier = pageflipper-content-element
+            title = LLL:EXT:pageflipper/Resources/Private/Language/locallang_db.xlf:wizard.title
+            description = LLL:EXT:pageflipper/Resources/Private/Language/locallang_db.xlf:wizard.description
+            tt_content_defValues {
+                CType = pageflipper
+            }
+        }
+    }
+    show := addToList(pageflipper)
+}

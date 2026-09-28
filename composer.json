@@ -1,0 +1,28 @@
+{
+    "name": "anubit/pageflipper",
+    "type": "typo3-cms-extension",
+    "description": "Content element that displays FAL PDFs as a responsive collection of lazy-loaded flipbooks (PDF.js + StPageFlip).",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Anu Bhuvanendran Nair",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-fluid": "^12.4",
+        "typo3/cms-frontend": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AnuBit\\Pageflipper\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pageflipper"
+        }
+    }
+}

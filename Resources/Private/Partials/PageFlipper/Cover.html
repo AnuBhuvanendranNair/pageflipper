@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{item.cover}">
+    <f:then>
+        <img class="pageflipper-card__image" src="{item.cover.url}" width="{item.cover.width}" height="{item.cover.height}" alt="{item.cover.alternative}" loading="lazy" decoding="async" />
+    </f:then>
+    <f:else>
+        <img class="pageflipper-card__image pageflipper-card__image--placeholder" src="{f:uri.resource(path: 'EXT:pageflipper/Resources/Public/Icons/PdfPlaceholder.svg')}" width="210" height="297" alt="" loading="lazy" decoding="async" />
+    </f:else>
+</f:if>
+</html>

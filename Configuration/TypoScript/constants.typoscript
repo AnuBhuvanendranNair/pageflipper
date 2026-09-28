@@ -1,0 +1,20 @@
+plugin.tx_pageflipper {
+    view {
+        # cat=plugin.tx_pageflipper/file; type=string; label=Path to template root (FE)
+        templateRootPath =
+        # cat=plugin.tx_pageflipper/file; type=string; label=Path to template partials (FE)
+        partialRootPath =
+        # cat=plugin.tx_pageflipper/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath =
+    }
+    settings {
+        # cat=plugin.tx_pageflipper/enable; type=boolean; label=Include default CSS
+        includeCss = 1
+        # cat=plugin.tx_pageflipper/file; type=string; label=CSS file (only used when default CSS is included)
+        cssFile = EXT:pageflipper/Resources/Public/Css/pageflipper.css
+        # cat=plugin.tx_pageflipper/dims; type=int+; label=Cover width in px
+        coverWidth = 480
+        # cat=plugin.tx_pageflipper/enable; type=boolean; label=Try server-side PDF thumbnails for covers
+        pdfThumbnails = 1
+    }
+}

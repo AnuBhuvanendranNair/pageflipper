@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:pageflipper/Resources/Private/Language/locallang_db.xlf" product-name="pageflipper">
+		<header/>
+		<body>
+			<trans-unit id="wizard.title" resname="wizard.title">
+				<source>PageFlipper</source>
+				<target>PageFlipper</target>
+			</trans-unit>
+			<trans-unit id="wizard.description" resname="wizard.description">
+				<source>Display PDFs as interactive flipbooks</source>
+				<target>PDFs als interaktive Blätterkataloge anzeigen</target>
+			</trans-unit>
+			<trans-unit id="tab.flipbook" resname="tab.flipbook">
+				<source>Flipbook</source>
+				<target>Blätterkatalog</target>
+			</trans-unit>
+			<trans-unit id="palette.layout" resname="palette.layout">
+				<source>Layout</source>
+				<target>Layout</target>
+			</trans-unit>
+			<trans-unit id="palette.viewer" resname="palette.viewer">
+				<source>Viewer</source>
+				<target>Viewer</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_files" resname="tt_content.tx_pageflipper_files">
+				<source>PDF files</source>
+				<target>PDF-Dateien</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_files.description" resname="tt_content.tx_pageflipper_files.description">
+				<source>Title and description default to the file metadata and can be overridden per file.</source>
+				<target>Titel und Beschreibung stammen aus den Datei-Metadaten und können pro Datei überschrieben werden.</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_files.add" resname="tt_content.tx_pageflipper_files.add">
+				<source>Add PDF file</source>
+				<target>PDF-Datei hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_columns" resname="tt_content.tx_pageflipper_columns">
+				<source>Columns</source>
+				<target>Spalten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_columns.description" resname="tt_content.tx_pageflipper_columns.description">
+				<source>Maximum number of columns on desktop. Tablets and phones use fewer columns automatically.</source>
+				<target>Maximale Spaltenanzahl auf dem Desktop. Auf Tablets und Smartphones werden automatisch weniger Spalten verwendet.</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_page_mode" resname="tt_content.tx_pageflipper_page_mode">
+				<source>Page mode</source>
+				<target>Seitenmodus</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_page_mode.double" resname="tt_content.tx_pageflipper_page_mode.double">
+				<source>Double pages</source>
+				<target>Doppelseiten</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_page_mode.single" resname="tt_content.tx_pageflipper_page_mode.single">
+				<source>Single page</source>
+				<target>Einzelseite</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_navigation" resname="tt_content.tx_pageflipper_navigation">
+				<source>Show navigation</source>
+				<target>Navigation anzeigen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_fullscreen" resname="tt_content.tx_pageflipper_fullscreen">
+				<source>Enable fullscreen</source>
+				<target>Vollbild aktivieren</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_zoom" resname="tt_content.tx_pageflipper_zoom">
+				<source>Enable zoom</source>
+				<target>Zoom aktivieren</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_download" resname="tt_content.tx_pageflipper_download">
+				<source>Allow PDF download</source>
+				<target>PDF-Download erlauben</target>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.tx_pageflipper_cover" resname="sys_file_reference.tx_pageflipper_cover">
+				<source>Cover image</source>
+				<target>Titelbild</target>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.tx_pageflipper_cover.description" resname="sys_file_reference.tx_pageflipper_cover.description">
+				<source>Optional. If empty, a preview of the first PDF page is generated when possible.</source>
+				<target>Optional. Ohne Bild wird nach Möglichkeit eine Vorschau der ersten PDF-Seite erzeugt.</target>
+			</trans-unit>
+			<trans-unit id="sys_file_reference.tx_pageflipper_cover.add" resname="sys_file_reference.tx_pageflipper_cover.add">
+				<source>Add cover image</source>
+				<target>Titelbild hinzufügen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_layout" resname="tt_content.tx_pageflipper_layout">
+				<source>View</source>
+				<target>Ansicht</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_layout.covers" resname="tt_content.tx_pageflipper_layout.covers">
+				<source>Book covers with titles</source>
+				<target>Buchcover mit Titeln</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_layout.tiles" resname="tt_content.tx_pageflipper_layout.tiles">
+				<source>Square tiles (title on hover)</source>
+				<target>Quadratische Kacheln (Titel bei Mouseover)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_layout.cards" resname="tt_content.tx_pageflipper_layout.cards">
+				<source>Cards with description and button</source>
+				<target>Karten mit Beschreibung und Button</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_show_titles" resname="tt_content.tx_pageflipper_show_titles">
+				<source>Show file titles</source>
+				<target>Dateititel anzeigen</target>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_pageflipper_show_titles.description" resname="tt_content.tx_pageflipper_show_titles.description">
+				<source>If disabled, titles are only available to screen readers.</source>
+				<target>Wenn deaktiviert, sind die Titel nur für Screenreader verfügbar.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

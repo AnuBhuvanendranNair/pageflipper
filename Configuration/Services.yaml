@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  AnuBit\Pageflipper\:
+    resource: '../Classes/*'
+
+  AnuBit\Pageflipper\DataProcessing\PageFlipperProcessor:
+    tags:
+      - name: 'data.processor'
+        identifier: 'pageflipper'

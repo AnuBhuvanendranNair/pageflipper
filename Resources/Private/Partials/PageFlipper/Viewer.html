@@ -1,0 +1,59 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:variable name="ll" value="LLL:EXT:pageflipper/Resources/Private/Language/locallang.xlf:" />
+<dialog class="pageflipper-viewer"
+        aria-labelledby="pageflipper-{data.uid}-title"
+        data-pageflipper-viewer
+        data-label-loading="{f:translate(key: '{ll}viewer.loading')}"
+        data-label-error="{f:translate(key: '{ll}viewer.error')}"
+        data-label-page="{f:translate(key: '{ll}viewer.pageOf', arguments: {0: '%current%', 1: '%total%'})}"
+>
+    <f:comment>Fullscreen is requested on this frame: dialog elements themselves cannot go fullscreen</f:comment>
+    <div class="pageflipper-viewer__frame" data-pageflipper-frame>
+    <div class="pageflipper-viewer__header">
+        <h2 class="pageflipper-viewer__title" id="pageflipper-{data.uid}-title" data-pageflipper-title></h2>
+        <div class="pageflipper-viewer__tools">
+            <f:if condition="{settings.zoom}">
+                <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="zoom-out" aria-label="{f:translate(key: '{ll}viewer.zoomOut')}" disabled>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="zoom-in" aria-label="{f:translate(key: '{ll}viewer.zoomIn')}">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M5 12h14M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+            </f:if>
+            <f:if condition="{settings.fullscreen}">
+                <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="fullscreen" aria-label="{f:translate(key: '{ll}viewer.fullscreen')}" aria-pressed="false" hidden>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </f:if>
+            <f:if condition="{settings.download}">
+                <a class="pageflipper-viewer__button" data-pageflipper-download href="#" download hidden aria-label="{f:translate(key: '{ll}viewer.download')}">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </f:if>
+            <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="close" autofocus aria-label="{f:translate(key: '{ll}viewer.close')}">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="pageflipper-viewer__stage" data-pageflipper-stage>
+        <div class="pageflipper-viewer__book" data-pageflipper-book></div>
+        <div class="pageflipper-viewer__zoom" data-pageflipper-zoom-layer tabindex="0" hidden></div>
+        <p class="pageflipper-viewer__status" data-pageflipper-status></p>
+    </div>
+
+    <f:if condition="{settings.navigation}">
+        <div class="pageflipper-viewer__footer">
+            <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="prev" aria-label="{f:translate(key: '{ll}viewer.previous')}">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="pageflipper-viewer__pages" data-pageflipper-pages></span>
+            <button type="button" class="pageflipper-viewer__button" data-pageflipper-action="next" aria-label="{f:translate(key: '{ll}viewer.next')}">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="24" height="24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+    </f:if>
+    <p class="pageflipper-visually-hidden" aria-live="polite" data-pageflipper-live></p>
+    </div>
+</dialog>
+</html>
