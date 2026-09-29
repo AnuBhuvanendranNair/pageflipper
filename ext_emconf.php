@@ -7,10 +7,10 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Anu Bhuvanendran Nair',
     'author_company' => 'AnuBit',
     'state' => 'stable',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-12.4.99',
+            'typo3' => '12.4.0-13.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
